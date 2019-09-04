@@ -9,11 +9,13 @@ import torchvision.utils as vutils
 from network.Transformer import Transformer
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--input_dir', default = 'test_img')
+# parser.add_argument('--input_dir', default = 'test_img')
+parser.add_argument('--input_dir', default = '/home/kehan/android-workspace/PictureMasterServer/apache-tomcat-9.0.24/webapps/PictureMasterServer_war/input_imgs')
 parser.add_argument('--load_size', default = 450)
 parser.add_argument('--model_path', default = './pretrained_model')
 parser.add_argument('--style', default = 'Hayao')
-parser.add_argument('--output_dir', default = 'test_output')
+# parser.add_argument('--output_dir', default = 'test_output')
+parser.add_argument('--output_dir', default = '/home/kehan/android-workspace/PictureMasterServer/apache-tomcat-9.0.24/webapps/PictureMasterServer_war/output_imgs')
 parser.add_argument('--gpu', type=int, default = 0)
 
 opt = parser.parse_args()
